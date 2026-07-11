@@ -1,9 +1,8 @@
-import {Button} from '@/components/Button'
-import {
-  ArrowRight,
-  Download
-} from "lucide-react";
-import {AnimatedBorderButton} from '@/components/AnimatedBorderButton';
+import { Button } from '@/components/Button';
+import { ArrowRight, Download } from "lucide-react";
+import { AnimatedBorderButton } from '@/components/AnimatedBorderButton';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6"; 
 
 export const Hero = () => {
     return (
@@ -76,23 +75,25 @@ export const Hero = () => {
                 </AnimatedBorderButton>
               </div>
 
-            {/* Social Links
+            {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: FaGithub, href: "https://github.com/ankithhebbar2004" },
+                { icon: FaLinkedin, href: "https://linkedin.com/in/ankith-hebbar-879a93247" },
+                { icon: FaXTwitter, href: "#" },
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300 flex items-center justify-center"
                 >
-                  {<social.icon className="w-5 h-5" />}
+                  <social.icon className="w-5 h-5" />
                 </a>
               ))}
-            </div> */}
+            </div>
             </div>
             {/* Right Column */}
           </div>
