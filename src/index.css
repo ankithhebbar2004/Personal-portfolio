@@ -162,4 +162,13 @@
       0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
   }
   
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 }
