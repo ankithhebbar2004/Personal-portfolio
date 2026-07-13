@@ -144,21 +144,20 @@ export const Hero = () => {
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                     <span className="text-sm font-medium">
-                      AI dev & Automation Tester
+                      AI developer & Automation Tester
                     </span>
                   </div>
                 </div>
 
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">
+                  <div className="text-1xl font-bold text-primary">
                     Belthangady
                   </div>
                   <div className="text-2xs text-muted-foreground text-secondary">
                     Karnataka, India
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
